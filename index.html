@@ -22,7 +22,7 @@
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0; background: var(--bg); color: var(--ink);
-    font: 17px/1.55 Helvetica, "TeX Gyre Heros", "Helvetica Neue", sans-serif;
+    font: 17px/1.55 Helvetica, "Helvetica Neue", "TeX Gyre Heros", sans-serif;
   }
   main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
   a { color: var(--link); text-decoration: none; }
@@ -61,6 +61,29 @@
   <h2>Projects</h2>
 
   <article>
+    <h3>Anticipating Competitive Window Length</h3>
+    <p class="question">How long do MLB competitive windows last, judged by projections rather than results?</p>
+    <p><em>Projected cushion above the playoff line predicts whether a window stays open; window age tells a mixed story.</em>
+      Prior research measures windows from results, but front offices have to plan from predictions.
+      Using 2014–2026 Opening Day FanGraphs playoff odds, a team is in a window if it ranks within its
+      league's postseason berths, or, on a fixed definition, in its league's top 6 (top 3 to top 9 as
+      checks). On the berth-relative definition, 56% of newly opened windows survived two seasons and
+      19% survived four. Each projected win of cushion lowered the odds of a window closing (odds ratio
+      0.67; 0.72 at the fixed line) and also predicted actually missing the next postseason. With
+      cushion held fixed, older windows were more likely to close on the berth-relative definition,
+      but not at the fixed top 6 or most other thresholds. Payroll and postseason format were not
+      significant.</p>
+    <p class="meta">Abstract submitted to the 2027 SABR Analytics Conference, November 2026.
+      Exploratory discrete-time hazard models. Code written by an AI agent (Claude Code) under my
+      direction; every decision and who made it is logged.</p>
+    <p class="links">
+      <a href="https://github.com/mkoizim/competitive-windows/blob/main/posts/post1-hazard/abstract.md">Read the abstract</a>
+      <a href="https://github.com/mkoizim/competitive-windows/blob/main/docs/decisions.md">Decisions log</a>
+      <a href="https://github.com/mkoizim/competitive-windows">Code</a>
+    </p>
+  </article>
+
+  <article>
     <h3>Player Cross-Effects</h3>
     <p class="question">Do right-handed hitters protect the lefties around them?</p>
     <p><em>Yes, through separation, and most clubs already collect most of it.</em>
@@ -93,11 +116,6 @@
     </p>
   </article>
 
-  <article>
-    <h3>Competitive Windows</h3>
-    <p class="question">How long do competitive windows last? A hazard model analysis of FanGraphs playoff odds.</p>
-    <p class="meta">Abstract for the SABR Analytics Conference, late November 2026.</p>
-  </article>
 
   <footer>
     The information used here was obtained free of charge from and is copyrighted by Retrosheet.
