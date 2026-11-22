@@ -6,6 +6,14 @@
 <title>Matthew C. Koizim · Baseball Research</title>
 <meta name="description" content="Baseball research projects by Matthew C. Koizim.">
 <style>
+  /* TeX Gyre Heros: a free Helvetica-style font (GUST Font License; see fonts/), served for
+     devices without Helvetica. Browsers download it only when Helvetica is missing. */
+  @font-face { font-family: "TeX Gyre Heros"; font-weight: 400; font-style: normal; font-display: swap;
+    src: local("TeX Gyre Heros"), local("TeXGyreHeros-Regular"), url("fonts/texgyreheros-regular.otf") format("opentype"); }
+  @font-face { font-family: "TeX Gyre Heros"; font-weight: 700; font-style: normal; font-display: swap;
+    src: local("TeX Gyre Heros Bold"), local("TeXGyreHeros-Bold"), url("fonts/texgyreheros-bold.otf") format("opentype"); }
+  @font-face { font-family: "TeX Gyre Heros"; font-weight: 400; font-style: italic; font-display: swap;
+    src: local("TeX Gyre Heros Italic"), local("TeXGyreHeros-Italic"), url("fonts/texgyreheros-italic.otf") format("opentype"); }
   :root { --bg: #ffffff; --ink: #000000; --ink2: #444444; --rule: #000000; --link: #1f5fb4; }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #121212; --ink: #f2f2f2; --ink2: #b4b4b4; --rule: #f2f2f2; --link: #7ab0f2; }
@@ -14,7 +22,7 @@
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0; background: var(--bg); color: var(--ink);
-    font: 17px/1.55 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 17px/1.55 Helvetica, "Helvetica Neue", "TeX Gyre Heros", sans-serif;
   }
   main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
   a { color: var(--link); text-decoration: none; }
